@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -68,8 +69,31 @@ public class Main {
         } while (validacao == 0);
 
 
+        // Calculando quantidade de sim
+        int sim = 0;
+        for (String res : listaDeRespostas) {
+            if(res.equals("sim")) sim++;
+        }
 
-        System.out.println(listaDeRespostas.toString());
+        // Saidas
+        System.out.println("----------------------------------------------------------------------------");
+        System.out.println("----------------------------------------------------------------------------");
+        switch (sim) {
+            case 2:
+                JOptionPane.showMessageDialog(null,"Voce e so um suspeita !");
+                break;
+            case 3, 4:
+                JOptionPane.showMessageDialog(null,"Voce e cumplice !");
+                break;
+            case 5:
+                JOptionPane.showMessageDialog(null,"Parado voce esta preso!! Voce e o assasino !");
+                break;
+            default:
+                JOptionPane.showMessageDialog(null,"Parabens voce e inocente!!");
+
+        }
+
+
 
 
     }
