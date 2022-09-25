@@ -27,7 +27,7 @@ Script Java Desvendando um crime rsrs !
  1. Clone este repositorio em sua maquina utilizando o gitbash:
  
 ``` 
-git clone "https://github.com/giovanesantiago/CalculadoraDeTemperaturaSemestral.git"
+git clone "https://github.com/giovanesantiago/DetetiveJavinha.git"
 ```
 
 2. Abra o Projeto com a IDE :
